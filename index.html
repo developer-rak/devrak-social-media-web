@@ -2,163 +2,184 @@
 <html lang="en">
 
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>devrak Social Website</title>
-	<!-- CSS -->
-	<link rel="stylesheet" href="style.css">
-	<!-- ICONS -->
-	<link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>devrak Social Website</title>
+   <!-- CSS -->
+   <link rel="stylesheet" href="style.css">
+   <!-- ICONS -->
+   <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
 </head>
 
 <body>
-	<!--=== NAVBAR ===-->
-	<nav>
-		<div class="container">
-			<h2 class="logo">
-				devrakSocial
-			</h2>
-			<div class="search-bar">
-				<i class="uil uil-search"></i>
-				<input type="search" placeholder="Search for creators, inpirations, and projects">
-			</div>
-			<div class="create">
-				<label class="btn btn-primary" for="create-post">Create</label>
-				<div class="profile-photo">
-					<img src="imgs/profile-1.jpg" alt="">
-				</div>
-			</div>
-		</div>
-	</nav>
+   <!--=== NAVBAR ===-->
+   <nav>
+      <div class="container">
+         <h2 class="logo">
+            devrakSocial
+         </h2>
+         <div class="search-bar">
+            <i class="uil uil-search"></i>
+            <input type="search" placeholder="Search for creators, inpirations, and projects">
+         </div>
+         <div class="create">
+            <label class="btn btn-primary" for="create-post">Create</label>
+            <div class="profile-photo">
+               <img src="imgs/profile-1.jpg" alt="">
+            </div>
+         </div>
+      </div>
+   </nav>
 
-	<!--=== MAIN ===-->
-	<main>
-		<div class="container">
-			<!-- -LEFT- -->
-			<div class="left">
-				<a class="profile">
-					<div class="profile-photo">
-						<img src="imgs/profile-1.jpg" alt="">
-					</div>
-					<div class="handle">
-						<h4>Diana Ayi</h4>
-						<p class="text-muted">
-							@dayi
-						</p>
-					</div>
-				</a>
+   <!--=== MAIN ===-->
+   <main>
+      <div class="container">
+         <!-- -LEFT- -->
+         <div class="left">
+            <a class="profile">
+               <div class="profile-photo">
+                  <img src="imgs/profile-1.jpg" alt="">
+               </div>
+               <div class="handle">
+                  <h4>Diana Ayi</h4>
+                  <p class="text-muted">
+                     @dayi
+                  </p>
+               </div>
+            </a>
 
-				<!-- -SIDEBAR- -->
-				<div class="sidebar">
-					<a class="menu-item active">
-						<span><i class="uil uil-home"></i></span>
-						<h3>Home</h3>
-					</a>
-					<a class="menu-item">
-						<span><i class="uil uil-compass"></i></span>
-						<h3>Explore</h3>
-					</a>
-					<a class="menu-item">
-						<span><i class="uil uil-bell"></i></span>
-						<h3>Notification</h3>
-					</a>
-					<a class="menu-item">
-						<span><i class="uil uil-envelope-alt"></i></span>
-						<h3>Message</h3>
-						<!-- ----------NOTIFICATION-POPUP---------- -->
-						<div class="notification-popup">
-							<div>
-								<div class="profile-photo">
-									<img src="imgs/profile-2.jpg">
-								</div>
-								<div class="notification-body">
-									<b>Rashid Ali</b> accepted your friend request
-									<small class="text-muted">2 DAYS AGO</small>
-								</div>
-							</div>
-							<div>
-								<div class="profile-photo">
-									<img src="imgs/profile-3.jpg">
-								</div>
-								<div class="notification-body">
-									<b>Sajid Khan</b> commented on your post
-									<small class="text-muted">1 HOUR AGO</small>
-								</div>
-							</div>
-							<div>
-								<div class="profile-photo">
-									<img src="imgs/profile-4.jpg">
-								</div>
-								<div class="notification-body">
-									<b>Hamid</b> and <b>283 others</b> liked your post
-									<small class="text-muted">4 MINUTES AGO</small>
-								</div>
-							</div>
-							<div>
-								<div class="profile-photo">
-									<img src="imgs/profile-5.jpg">
-								</div>
-								<div class="notification-body">
-									<b>Zahra</b> commented on a post you are tagged in
-									<small class="text-muted">2 WEEKS AGO</small>
-								</div>
-							</div>
-							<div>
-								<div class="profile-photo">
-									<img src="imgs/profile-6.jpg">
-								</div>
-								<div class="notification-body">
-									<b>Usama bin Ladin</b> warning you on a post
-									<small class="text-muted">1 MINUTE AGO</small>
-								</div>
-							</div>
-							<div>
-								<div class="profile-photo">
-									<img src="imgs/profile-7.jpg">
-								</div>
-								<div class="notification-body">
-									<b>Donald Trump</b> Liked your post
-									<small class="text-muted">39 SECONDS AGO</small>
-								</div>
-							</div>
-						</div>
-						<!-- ----------END-NOTIFICATION-POPUP---------- -->
-					</a>
-					<a class="menu-item">
-						<span><i class="uil uil-bookmark"></i></span>
-						<h3>Bookmark</h3>
-					</a>
-					<a class="menu-item">
-						<span><i class="uil uil-chart-line"></i></span>
-						<h3>Analytics</h3>
-					</a>
-					<a class="menu-item">
-						<span><i class="uil uil-palette"></i></span>
-						<h3>Theme</h3>
-					</a>
-					<a class="menu-item">
-						<span><i class="uil uil-setting"></i></span>
-						<h3>Setting</h3>
-					</a>
-				</div>
-				<!-- -END-SIDEBAR- -->
-				<label for="create-post" class="btn btn-primary">Create Post</label>
-			</div>
+            <!-- -SIDEBAR- -->
+            <div class="sidebar">
+               <a class="menu-item active">
+                  <span><i class="uil uil-home"></i></span>
+                  <h3>Home</h3>
+               </a>
+               <a class="menu-item">
+                  <span><i class="uil uil-compass"></i></span>
+                  <h3>Explore</h3>
+               </a>
+               <a class="menu-item" id="notifications">
+                  <span><i class="uil uil-bell"><small class="notification-count">9+</small></i></span>
+                  <h3>Notification</h3>
+                  <!-- ----------NOTIFICATION-POPUP---------- -->
+                  <div class="notification-popup">
+                     <div>
+                        <div class="profile-photo">
+                           <img src="imgs/profile-2.jpg">
+                        </div>
+                        <div class="notification-body">
+                           <b>Rashid Ali</b> accepted your friend request
+                           <small class="text-muted">2 DAYS AGO</small>
+                        </div>
+                     </div>
+                     <div>
+                        <div class="profile-photo">
+                           <img src="imgs/profile-3.jpg">
+                        </div>
+                        <div class="notification-body">
+                           <b>Sajid Khan</b> commented on your post
+                           <small class="text-muted">1 HOUR AGO</small>
+                        </div>
+                     </div>
+                     <div>
+                        <div class="profile-photo">
+                           <img src="imgs/profile-4.jpg">
+                        </div>
+                        <div class="notification-body">
+                           <b>Hamid</b> and <b>283 others</b> liked your post
+                           <small class="text-muted">4 MINUTES AGO</small>
+                        </div>
+                     </div>
+                     <div>
+                        <div class="profile-photo">
+                           <img src="imgs/profile-5.jpg">
+                        </div>
+                        <div class="notification-body">
+                           <b>Zahra</b> commented on a post you are tagged in
+                           <small class="text-muted">2 WEEKS AGO</small>
+                        </div>
+                     </div>
+                     <div>
+                        <div class="profile-photo">
+                           <img src="imgs/profile-6.jpg">
+                        </div>
+                        <div class="notification-body">
+                           <b>Usama bin Ladin</b> warning you on a post
+                           <small class="text-muted">1 MINUTE AGO</small>
+                        </div>
+                     </div>
+                     <div>
+                        <div class="profile-photo">
+                           <img src="imgs/profile-7.jpg">
+                        </div>
+                        <div class="notification-body">
+                           <b>Donald Trump</b> Liked your post
+                           <small class="text-muted">39 SECONDS AGO</small>
+                        </div>
+                     </div>
+                  </div>
+                  <!-- ----------END-NOTIFICATION-POPUP---------- -->
+               </a>
+               <a class="menu-item" id="messages-notifications">
+                  <span><i class="uil uil-envelope-alt"><small class="notification-count">6</small></i></span>
+                  <h3>Message</h3>
+               </a>
+               <a class="menu-item">
+                  <span><i class="uil uil-bookmark"></i></span>
+                  <h3>Bookmark</h3>
+               </a>
+               <a class="menu-item">
+                  <span><i class="uil uil-chart-line"></i></span>
+                  <h3>Analytics</h3>
+               </a>
+               <a class="menu-item">
+                  <span><i class="uil uil-palette"></i></span>
+                  <h3>Theme</h3>
+               </a>
+               <a class="menu-item">
+                  <span><i class="uil uil-setting"></i></span>
+                  <h3>Setting</h3>
+               </a>
+            </div>
+            <!-- -END-SIDEBAR- -->
+            <label for="create-post" class="btn btn-primary">Create Post</label>
+         </div>
 
-			<!-- -MIDDLE- -->
-			<div class="middle">
+         <!-- -MIDDLE- -->
+         <div class="middle">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis eos veniam, dolorem dolores quasi repellat
+            minus nobis excepturi suscipit sed assumenda laborum voluptatibus, accusamus nulla atque blanditiis modi
+            inventore possimus? In iste sequi aspernatur earum architecto perspiciatis rem, eius odio fugit odit
+            suscipit dicta mollitia excepturi deserunt possimus. Quasi accusamus voluptates deleniti quibusdam libero
+            quaerat porro est fugiat ad, vitae suscipit pariatur id, temporibus, ipsum quae beatae. Excepturi tenetur
+            sequi adipisci omnis facilis aspernatur numquam vero officia suscipit repudiandae, perferendis expedita
+            cumque dolores, eos dolor ad possimus maiores hic beatae assumenda error voluptatum molestias quos.
+            Accusamus error nisi fugit voluptates molestiae exercitationem, quos aspernatur, quo molestias minus ex.
+            Odit facilis, magni reiciendis rem assumenda optio odio culpa laboriosam obcaecati corrupti excepturi
+            consequatur, ea deserunt dignissimos nobis eos repellendus, recusandae dolores corporis? Ipsum, recusandae
+            similique. Accusamus iure asperiores recusandae. Illum veniam placeat dolore odit quae, fugit quas accusamus
+            omnis. Esse voluptatum delectus, ea sit dolorem, nobis dicta nisi ipsum asperiores ducimus temporibus vitae
+            soluta, enim nam cumque tenetur autem perferendis at velit. Hic fugit molestiae ipsa soluta atque non
+            cumque, iusto perspiciatis commodi voluptates quaerat minima, sit reprehenderit ad quod tempora quas vero
+            doloremque nulla ex illo. Officiis, asperiores sit! Quas?
+         </div>
 
-			</div>
+         <!-- -RIGHT- -->
+         <div class="right">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, eum. Soluta hic iusto ut rerum consequuntur
+            repellendus dolorum accusantium numquam autem. Eveniet cupiditate animi placeat autem repellendus, fugit
+            earum nihil deleniti qui, suscipit, adipisci necessitatibus quae velit pariatur consequuntur corrupti
+            deserunt eaque et voluptatem mollitia vitae impedit voluptatum? Odio corporis quisquam, fuga quam, veniam
+            at, non porro totam aperiam fugit nam voluptatem et quibusdam asperiores deserunt ipsum incidunt ratione
+            sed? Illum aliquam doloremque iure accusamus eaque magnam sapiente officia totam perspiciatis nostrum
+            temporibus et recusandae quod, autem nobis amet vero, cupiditate veniam tempora tenetur itaque quasi
+            quisquam commodi? Possimus, porro.
+         </div>
+      </div>
+   </main>
 
-			<!-- -RIGHT- -->
-			<div class="right">
-
-			</div>
-		</div>
-	</main>
-
-	<!-- JS -->
-	<script src="script.js"></script>
+   <!-- JS -->
+   <script src="script.js"></script>
 </body>
 
 </html>

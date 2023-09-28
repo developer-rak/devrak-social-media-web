@@ -261,3 +261,14 @@ main .container .left .profile {
     left: -0.6rem;
     transform: rotate(45deg);
 }
+
+.left .notification-popup>div {
+    display: flex;
+    align-items: start;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.left .notification-popup small {
+    display: block;
+}

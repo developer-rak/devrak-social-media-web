@@ -141,6 +141,8 @@ main .container {
     position: relative;
 }
 
+/* === END-MAIN === */
+
 
 /* === LEFT === */
 main .container .left {
@@ -273,6 +275,8 @@ main .container .left .profile {
 .left .notification-popup small {
     display: block;
 }
+
+/* === END-LEFT === */
 
 
 /* === MIDDLE === */
@@ -417,3 +421,29 @@ main .container .left .profile {
 .middle .liked-by p {
     margin-left: 0.5rem;
 }
+
+/* === END-MIDDLE === */
+
+
+/* === RIGHT === */
+main .container .right {
+    height: max-content;
+    position: sticky;
+    top: var(--sticky-top-right);
+    bottom: 0;
+}
+
+.right .messages {
+    background: var(--color-white);
+    border-radius: var(--card-border-radius);
+    padding: var(--card-padding);
+}
+
+.right .messages .heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+/* === END-RIGHT === */

@@ -713,7 +713,7 @@ main .container .right {
 
 
 
-/* === MEDIA QUETIES FOR AMALL LAPTOPS AND BIG TABLETS === */
+/* === MEDIA QUERIES FOR AMALL LAPTOPS AND BIG TABLETS === */
 @media screen and (max-width: 1200px) {
     .container {
         width: 96%;
@@ -734,6 +734,49 @@ main .container .right {
     }
 
     .sidebar h3 {
+        display: none;
+    }
+
+    .left .btn {
+        display: none;
+    }
+}
+
+
+
+
+/* === MEDIA QUERIES FOR SMALL TABLETS AND MOBILE PHONES === */
+@media screen and (max-width: 992px) {
+    nav .search-bar {
+        display: none;
+    }
+
+    main .container {
+        grid-template-columns: 0 auto 5rem;
+    }
+
+    main .container .left {
+        grid-column: 3/4;
+        position: fixed;
+        bottom: 0;
+        right: 0;
+    }
+
+    /* NOTIFICATION-POPUP */
+    .left .notification-popup {
+        position: absolute;
+        left: -20rem;
+        width: 20rem;
+    }
+
+    .left .notification-popup::before {
+        display: absolute;
+        top: 1.3rem;
+        left: calc(20rem - 0.6rem);
+        display: block;
+    }
+
+    main .container .left .sidebar>div h3 {
         display: none;
     }
 }

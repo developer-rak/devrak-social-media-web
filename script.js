@@ -31,6 +31,23 @@ menuItems.forEach(item => {
 
 
 // ======================>> MESSAGES
+// search Message
+const searchMessage = () => {
+    const val = messageSearch.value.toLowerCase();
+    message.forEach(user => {
+        let name = user.querySelector('h5').textContent.toLocaleLowerCase();
+        if (name.indexOf(val) != -1) {
+            user.style.display = 'flex';
+        } else {
+            user.style.display = 'none';
+        }
+    })
+}
+
+// search chat
+messageSearch.addEventListener('keyup', searchMessage);
+
+// highlight messages card when messages menu item is clicked
 messagesNotification.addEventListener('click', () => {
     messages.style.boxShadow = '0 0 1rem var(--color-primary)';
     messagesNotification.querySelector('.notification-count').style.display = 'none';

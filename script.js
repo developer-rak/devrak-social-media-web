@@ -4,9 +4,11 @@ const menuItems = document.querySelectorAll('.menu-item');
 // MESSAGES
 const messagesNotification = document.querySelector('#messages-notifications');
 const messages = document.querySelector('.messages');
+const message = document.querySelectorAll('.message');
+const messageSearch = document.querySelector('#message-search');
 
 
-// SIDEBAR
+// ======================>> SIDEBAR
 // remove active class from all menu items
 const changeActiveItem = () => {
     menuItems.forEach(item => {
@@ -27,7 +29,8 @@ menuItems.forEach(item => {
     })
 })
 
-// ======================> MESSAGES
+
+// ======================>> MESSAGES
 messagesNotification.addEventListener('click', () => {
     messages.style.boxShadow = '0 0 1rem var(--color-primary)';
     messagesNotification.querySelector('.notification-count').style.display = 'none';

@@ -249,7 +249,8 @@ main .container .left .profile {
     background: var(--color-white);
     border-radius: var(--card-border-radius);
     padding: var(--card-padding);
-    box-shadow: 0 0 2rem hsl(var(--color-primary), 75%, 60% 25%);
+    /* box-shadow: 0 0 2rem hsl(var(--color-primary), 75%, 60% 25%); */
+    box-shadow: 0 0 1rem var(--color-primary);
     z-index: 8;
     display: none;
 }
@@ -564,6 +565,7 @@ main .container .right {
     padding: 3rem;
     border-radius: var(--card-border-radius);
     width: 50%;
+    box-shadow: 0 0 1rem var(--color-primary);
 }
 
 
@@ -740,6 +742,10 @@ main .container .right {
     .left .btn {
         display: none;
     }
+
+    .customize-theme .card {
+        width: 80vw;
+    }
 }
 
 
@@ -783,5 +789,9 @@ main .container .right {
 
     main .container .right {
         display: none;
+    }
+
+    .customize-theme .card {
+        width: 92vw;
     }
 }

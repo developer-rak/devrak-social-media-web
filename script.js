@@ -12,6 +12,7 @@ const theme = document.querySelector('#theme');
 const themeModal = document.querySelector('.customize-theme');
 const fontSize = document.querySelectorAll('.font-size span');
 var root = document.querySelector(':root');
+const colorPalette = document.querySelectorAll('.choose-color span');
 
 
 // ======================>> SIDEBAR
@@ -80,6 +81,7 @@ const closeThemeModal = (e) => {
 // close modal
 themeModal.addEventListener('click', closeThemeModal);
 
+
 // ======================>> FONTS
 const removeSizeSelector = () => {
     fontSize.forEach(size => {
@@ -117,5 +119,19 @@ fontSize.forEach(size => {
 
         // change the font size of the root html element
         document.querySelector('html').style.fontSize = fontSize;
+    })
+})
+
+
+// ======================>> COLORS
+colorPalette.forEach(color => {
+    color.addEventListener('click', () => {
+        let primary;
+
+        if (color.classList.contains('color-1')) {
+            primary = 252;
+        } else if (color.classList.contains('color-2')) {
+            primary = 252;
+        }
     })
 })
